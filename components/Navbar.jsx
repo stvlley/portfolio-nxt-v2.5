@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
@@ -6,6 +6,29 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsPersonLinesFill } from 'react-icons/bs'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
+    const [logoToggle, setlogoToggle] = useState('/logo.svg')
+    const [color, setColor] = useState('transparent');
+    const [textColor, setTextColor] = useState('#dffffff');
+    const [style, setStyle] = useState('fixed bg-gradient-to-l from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
+    
+   useEffect(() => {
+      const changeColor = () => {
+        if (window.scrollY >= 900) {
+          setColor('#ffffff');
+          setTextColor('#000000');
+          setlogoToggle('/logo-dark.svg');
+          setStyle('fixed bg-gray-100 w-full h-30 shadow-xl ')
+        } else {
+          setColor('transparent');
+          setTextColor('#ffffff');
+          setlogoToggle('/logo.svg');
+          setStyle('fixed bg-gradient-to-l from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
+        }
+      };
+      window.addEventListener('scroll', changeColor);
+    }, []);
+
+
     const handleClick = () => {
         console.log("clicked")
     }
@@ -16,10 +39,10 @@ const Navbar = () => {
     return (
         // Top navbar hidden when mobile
         <div>
-            <div className="fixed bg-gradient-to-l from-[#303030] to-[#1b1b1b] w-full h-30 shadow-xl ">
+            <div   style={{ backgroundColor: `${color}` }} className={style}>
                 <div className="flex justify-between items-center w-full px-3 2xl:px-16">
-                    <Image alt='' src='/logo.svg' width='120' height='100' />
-                    <ul className='hidden md:flex'>
+                    <Image alt='' src={logoToggle} width='120' height='100' />
+                    <ul style={{ color: `${textColor}` }}  className='hidden md:flex'>
                         <Link href='/'>
                             <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
                         </Link>

@@ -25,6 +25,7 @@
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#3ed6b5] to-[#3b86d6]
+    @apply shadow-lg rounded p-2 px-3 m-1 tracking-widest uppercase bg-black/30 hover:bg-gradient-to-r from-[#3bd1d6]/80 to-[#3ed6b5]/80
   }
+  
 }
