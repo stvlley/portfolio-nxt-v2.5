@@ -10,6 +10,7 @@ const Navbar = () => {
     const [color, setColor] = useState('transparent');
     const [textColor, setTextColor] = useState('#dffffff');
     const [style, setStyle] = useState('fixed bg-gradient-to-l from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
+    const [iconToggle, setIconToggle] = useState('cursor-pointer hover:scale-105 duration-700 md:hidden px-3')
     
    useEffect(() => {
       const changeColor = () => {
@@ -17,12 +18,14 @@ const Navbar = () => {
           setColor('#ffffff');
           setTextColor('#000000');
           setlogoToggle('/logo-dark.svg');
-          setStyle('fixed bg-gray-100 w-full h-30 shadow-xl ')
+          setStyle('fixed bg-gradient-to-l from-[#dffff9]/50 to-[#c3c3c3] w-full h-30 shadow-xl ')
+          setIconToggle('text-black cursor-pointer hover:scale-105 duration-700 md:hidden px-3')
         } else {
           setColor('transparent');
           setTextColor('#ffffff');
           setlogoToggle('/logo.svg');
           setStyle('fixed bg-gradient-to-l from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
+          setIconToggle('text-white cursor-pointer hover:scale-105 duration-700 md:hidden px-3')
         }
       };
       window.addEventListener('scroll', changeColor);
@@ -42,9 +45,9 @@ const Navbar = () => {
             <div   style={{ backgroundColor: `${color}` }} className={style}>
                 <div className="flex justify-between items-center w-full px-3 2xl:px-16">
                     <Image alt='' src={logoToggle} width='120' height='100' />
-                    <ul style={{ color: `${textColor}` }}  className='hidden md:flex'>
+                    <ul style={{ color: `${textColor}` }}  className='hidden tracking-widest md:flex'>
                         <Link href='/'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+                            <li className="ml-10 text-sm b  uppercase hover:border-b">Home</li>
                         </Link>
                         <Link href='/'>
                             <li className="ml-10 text-sm uppercase hover:border-b">About</li>
@@ -59,7 +62,7 @@ const Navbar = () => {
                             <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
                         </Link>
                     </ul>
-                    <div onClick={handleNav} className='cursor-pointer hover:scale-105 duration-700 md:hidden px-3'>
+                    <div onClick={handleNav} className={iconToggle}>
                         <AiOutlineMenu size={25} />
                     </div>
                 </div>
