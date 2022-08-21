@@ -41,25 +41,27 @@ const Navbar = () => {
     }
     return (
         // Top navbar hidden when mobile
-        <div >
+        <div className='uppercase tracking-widest'>
             <div   style={{ backgroundColor: `${color}` }} className={style}>
                 <div className="flex justify-between items-center w-full px-3 2xl:px-16">
                     <Image alt='' src={logoToggle} width='120' height='100' />
-                    <ul style={{ color: `${textColor}` }}  className='hidden tracking-widest md:flex'>
+                    <ul style={{ color: `${textColor}` }}  className='hidden  tracking-widest md:flex'>
+                    
+                        <Link  href='/'>
+                            <li className="hover:scale-125 ease-in duration-300 ml-10  cursor-pointer text-sm uppercase hover:border-b">Home</li>
+                        </Link>
+                   
                         <Link href='/'>
-                            <li className="ml-10 text-sm b  uppercase hover:border-b">Home</li>
+                            <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">About</li>
                         </Link>
                         <Link href='/'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+                            <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Skills</li>
                         </Link>
                         <Link href='/'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+                            <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Work</li>
                         </Link>
                         <Link href='/'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">Work</li>
-                        </Link>
-                        <Link href='/'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
+                            <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Contact</li>
                         </Link>
                     </ul>
                     <div onClick={handleNav} className={iconToggle}>
@@ -73,7 +75,7 @@ const Navbar = () => {
                     <div>
                         <div className='flex w-full items-center justify-between'>
                             <Image alt='' src='/logo.svg' width='75' height='75' />
-                            <div onClick={handleNav} className='hover:scale-105 ease-in duration-300 border-2 p-2 rounded-xl cursor-pointer shadow-xl shadow-gray-800'>
+                            <div onClick={handleNav} className='hover:scale-105 ease-in duration-300 border p-2 rounded-lg cursor-pointer shadow-xl shadow-gray-800'>
                                 <AiOutlineClose size={25} />
                             </div>
                         </div>
