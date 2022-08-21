@@ -18,13 +18,13 @@ const Navbar = () => {
           setColor('#ffffff');
           setTextColor('#000000');
           setlogoToggle('/logo-dark.svg');
-          setStyle('fixed bg-gradient-to-l from-[#dffff9]/50 to-[#c3c3c3] w-full h-30 shadow-xl ')
+          setStyle('fixed bg-gradient-to-l z-[100] from-[#dffff9]/50 to-[#c3c3c3] w-full h-30 shadow-xl ')
           setIconToggle('text-black cursor-pointer hover:scale-105 duration-700 md:hidden px-3')
         } else {
           setColor('transparent');
           setTextColor('#ffffff');
           setlogoToggle('/logo.svg');
-          setStyle('fixed bg-gradient-to-l from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
+          setStyle('fixed bg-gradient-to-l z-[100] from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
           setIconToggle('text-white cursor-pointer hover:scale-105 duration-700 md:hidden px-3')
         }
       };

@@ -13,7 +13,7 @@ const Main = () => {
                             <h1 className='py-4  sm:text-right text-gray-300'><div className='invisible sm:visible'>Hi, I'm </div><span className='text-5xl sm:text-7xl tracking-widest text-[#b0f4ef]'>Stephen Talley</span></h1>
                         </div>
                         <div>
-                        <h1 className='mb-5 text-2xl sm:text-6xl mx-3 px-3 m-auto text-gray-300 text-left'>
+                        <h1 className='uppercase tracking-widest font-light mb-5 text-lg sm:text-6xl mx-3 px-3 m-auto text-gray-300 text-left'>
                                 A Fullstack Web Developer
                         </h1>
                         <button className='border border-white sahdow-lg shadow-black/80 text-md sm:text-lg md:text-xl md:px-6 md:p-4'>View My Work</button>

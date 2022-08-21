@@ -1,54 +1,81 @@
+import { useState, useEffect } from 'react'
+import {AiFillHtml5, } from 'react-icons/ai'
+import {DiCss3 } from 'react-icons/di'
 import Image from 'next/image'
-import React from 'react'
+export default function Skills() {
 
-const Skills = () => {
-    return (
-        <div className='w-full h-[400px] p-2'>
-            <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-                <p className='uppercase tracking-widest text-xl'>Skills</p>
-                <div className='gird md:grid-cols-2 lg;grid-ols-4 gap 8'>
-                    <div className='p-6 rounded hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-4 md:grid-cols-4 gap-4 justify-center items-center'>
-                            <div className="shadow-lg shadow-black m-auto bg-black/30 p-3 rounded-lg border border-white">
-                                <Image alt='' src='/html.svg' width='120' height='100' />
+    const [size, setSize] = useState(70)
 
-                            </div>
-                            <div className="shadow-lg shadow-black m-auto bg-black/30 p-3 rounded-lg border border-white">
-                                <Image alt='' src='/css.svg' width='120' height='100' />
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth > 900){
+            setSize(70)
+        } else {
+            setSize(40)
+        }
+      }
+      window.addEventListener('resize', handleResize)
 
-                            </div>
-                            <div className="m-auto shadow-lg shadow-black bg-black/30 p-3 rounded-lg border border-white">
-                                <Image alt='' src='/javascript.svg' width='120' height='100' />
+      return () => {
+          window.removeEventListener('resize', handleResize)
+      }
+    
+    
+    }, [])
+    
 
-                            </div>
-                            <div className="m-auto shadow-lg shadow-black bg-black/30 p-3 rounded-lg border border-white">
-                                <Image alt='' src='/react-light.svg' width='120' height='100' />
 
-                            </div>
-                            <div className="m-auto shadow-lg shadow-black bg-black/30 p-3 rounded-lg border border-white">
-                                <Image alt='' src='/rails.svg' width='120' height='100' />
+  return (
+        <>
 
-                            </div>
-                            <div className="m-auto shadow-lg shadow-black bg-black/30 p-3 rounded-lg border border-white">
-                                <Image alt='' src='/nextjs-light.svg' width='120' height='100' />
+        <div name='skills' className=' py-6 w-full h-[500px] text-white'>
 
-                            </div>
-                            <div className="m-auto shadow-lg shadow-black bg-black/30 p-3 rounded-lg border border-white">
-                                <Image alt='' src='/tailwindcss-light.svg' width='120' height='100' />
+      {/* Container */}
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col  justify-center w-full h-full'>
+          <div className='mt-6 p-4 hover:scale-110 duration-500 '>
+              <p className='text-2xl uppercase tracking-widest text-gray-300'>Skills</p>
+          </div>
+      
 
-                            </div>
-                            <div className="m-auto shadow-lg shadow-black bg-black/30 p-3 rounded-lg border border-white">
-                                <Image alt='' src='/python-light.svg' width='120' height='100' />
+          <div className='w-full mb-5 text-xs md:text-sm text-white tracking-widest grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-4'>
+              <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
+                  <Image priority src='/html.svg' alt='' width={size} height={size} />
+                  <p className='my-4'>HTML</p>
+              </div>
+              <div className='rounded-lg pt-3 shadow-md bg-black/30 border border-white hover:scale-110 duration-500'>
+              <Image priority src='/css.svg' alt='' width={size} height={size} />
+                  <p className='my-4'>CSS</p>
+              </div>
+              <div className='rounded-lg pt-3 shadow-md border border-white  bg-black/30 hover:scale-110 duration-500'>
+              <Image priority src='/javascript.svg' alt='' width={size} height={size} />
+                  <p className='my-4'>JAVASCRIPT</p>
+              </div>
+              <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
+              <Image priority src='/rails.svg' alt='' width={size} height={size} />
+                  <p className='my-4'>REACT</p>
+              </div>
+              <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
+              <Image priority src='/react-light.svg' alt='' width={size} height={size} />
+                  <p className='my-4'>RAILS</p>
+              </div>
+              <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
+              <Image priority src='/nextjs-light.svg' alt='' width={size} height={size} />
+                  <p className='my-4'>NEXTJS</p>
+              </div>
+              <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
+              <Image priority src='/tailwindcss-light.svg' alt='' width={size} height={size} />
+                  <p className='my-4'>TAILWINDCSS</p>
+              </div>
+              <div className='rounded-lg pt-3 shadow-md bg-black/30 border border-white  hover:scale-110 duration-500'>
+              <Image priority src='/python-light.svg' alt='' width={size} height={size} />
+                  <p className='my-4'>PYTHON</p>
+              </div>
+              
+          </div>
 
-                            </div>
-                          
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+  
+      </div>
+    </div>
+    </>
+  )
 }
-
-export default Skills

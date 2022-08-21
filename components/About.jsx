@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className='w-full h-screen py-40 bg-black/30 justify-center items-center text-center'>
             <div name='about' className='text-white  w-full h-[400px] '>
-                <div className='flex flex-col justify-center sm:items-center w-full h-full'>
+                <div className='flex flex-col justify-center  sm:items-center w-full h-full'>
                     <div className=' p-1 rounded-lg px-3 mx-6 hover:scale-110 duration-500 '>
                         <p className=' text-2xl px-1 sm:text-3xl tracking-widest  m-1 w-full  uppercase text-gray-300 '>About</p>
                     </div>
