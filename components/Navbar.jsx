@@ -9,7 +9,7 @@ const Navbar = () => {
     const [logoToggle, setlogoToggle] = useState('/logo.svg')
     const [color, setColor] = useState('transparent');
     const [textColor, setTextColor] = useState('#dffffff');
-    const [style, setStyle] = useState('fixed bg-gradient-to-l from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
+    const [style, setStyle] = useState('z-[50] fixed bg-gradient-to-l from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
     const [iconToggle, setIconToggle] = useState('cursor-pointer hover:scale-105 duration-700 md:hidden px-3')
     
    useEffect(() => {
@@ -18,13 +18,13 @@ const Navbar = () => {
           setColor('#ffffff');
           setTextColor('#000000');
           setlogoToggle('/logo-dark.svg');
-          setStyle('fixed bg-gradient-to-l z-[100] from-[#dffff9]/50 to-[#c3c3c3] w-full h-30 shadow-xl ')
+          setStyle('fixed bg-gradient-to-l z-[50] from-[#dffff9]/50 to-[#c3c3c3] w-full h-30 shadow-xl ')
           setIconToggle('text-black cursor-pointer hover:scale-105 duration-700 md:hidden px-3')
         } else {
           setColor('transparent');
           setTextColor('#ffffff');
           setlogoToggle('/logo.svg');
-          setStyle('fixed bg-gradient-to-l z-[100] from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
+          setStyle('fixed bg-gradient-to-l z-[50]  from-[#303030]/90 to-[#1b1b1b]/90 w-full h-30 shadow-xl ')
           setIconToggle('text-white cursor-pointer hover:scale-105 duration-700 md:hidden px-3')
         }
       };
@@ -41,7 +41,7 @@ const Navbar = () => {
     }
     return (
         // Top navbar hidden when mobile
-        <div>
+        <div >
             <div   style={{ backgroundColor: `${color}` }} className={style}>
                 <div className="flex justify-between items-center w-full px-3 2xl:px-16">
                     <Image alt='' src={logoToggle} width='120' height='100' />
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* sliding navbar from left to right */}
-            <div className={nav ? "fixed md:hidden left-0 top-0 w-full h-screen bg-black/70" : ''}>
+            <div className={nav ? "fixed z-[50] md:hidden left-0 top-0 w-full h-screen bg-black/70" : ''}>
                 <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[0%] md:w-[45%] h-screen bg-gradient-to-r from-[#000000] to-black/30 p-10 ease-in-out duration-500 ' : 'fixed left-[-150%]  top-0 p-10 ease-in duration-500 '}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
@@ -121,7 +121,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* side tag for links hidden when mobile */}
-            <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
+            <div className='hidden z-[100] md:flex fixed flex-col top-[35%] left-0'>
                 <ul >
                     <li className='p-4 border-spacing-2 border-white border rounded-lg w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black/30'>
                         <a
