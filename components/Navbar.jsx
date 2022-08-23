@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-// import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsPersonLinesFill } from 'react-icons/bs'
@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className='uppercase tracking-widest'>
             <div   style={{ backgroundColor: `${color}` }} className={style}>
                 <div className="flex justify-between items-center w-full px-3 2xl:px-16">
-                    <Image alt='' src={logoToggle} width='120' height='100' />
+                    <Image alt='' src={logoToggle} width='100' height='60' />
                     <ul style={{ color: `${textColor}` }}  className='hidden  tracking-widest md:flex'>
                     
                         <Link  spy={true}  offset={50} duration={500} to='main'>
@@ -57,7 +57,7 @@ const Navbar = () => {
                         <Link spy={true}  offset={50} duration={500} to='about'>
                             <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">About</li>
                         </Link>
-                        <Link spy={true}  offset={50} duration={500} to='work'>
+                        <Link  spy={true}  offset={50} duration={500} to='work'>
                             <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Work</li>
                         </Link>
                         <Link spy={true}  offset={50} duration={500} to='contact'>

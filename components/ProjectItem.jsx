@@ -11,10 +11,11 @@ const ProjectItem = () => {
                 <div className='hidden uppercase tracking-widest group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                     <h3 className='text-bold text-2xl'>Portfolio Website v2</h3>
                     <p>NextJS Project</p>
-                    <Link href='/'>
+                    <Link href={`work/1`}>
                         <p className='hover:bg-black/40 rounded-lg cursor-pointer border m-2 p-2 border-white'>details</p>
                     </Link>
-                    <Link href='/'>
+                    {/* change to dynamic path with project id */}
+                    <Link duration={500} href={`work/1`}>
                         <p className='hover:bg-gradient-to-r  from-[#ff0000] to-[#ff0303] rounded-lg border m-2 p-2 border-white cursor-pointer'>live</p>
                     </Link>
                    

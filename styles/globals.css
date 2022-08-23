@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html::-webkit-scrollbar {
+  overflow: scroll;
+  overflow-x: hidden;
+  display: none;
+}
 html {
   scroll-behavior: smooth;
-}
 
+}
 @layer base {
 
   body {
