@@ -1,10 +1,8 @@
 import React from 'react'
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { AiOutlineMail } from 'react-icons/ai'
-import { BsPersonLinesFill } from 'react-icons/bs'
+
 const Contact = () => {
     return (
-        <div className='w-full lg:h-screen bg-black/30'>
+        <div id='contact' className='w-full mt-20 lg:h-screen sm:px-20 pt-8 '>
             <div className=' px-3 max-w-[1240px] uppercase  m-auto  py-32 w-full'>
 
                 <p className='text-2xl md:text-4xl tracking-widest'>
@@ -26,48 +24,77 @@ const Contact = () => {
                                 </h2>
                                 <p className='font-bold tracking-widest px-4'>Fullstack Web Developer</p>
                             </div>
+                            <div className='tracking-widest text-gray-300 p-3 pt-5 '>
+                                <h2>"building the future one line of code at a time."</h2>
+                            </div>
 
                         </div>
                     </div>
                     {/* right */}
-                    <div>
-
-                    </div>
-                    <div className='col-span-3 bg-black/30 border border-white  lg:col-span-2 w-full shadow-xl rounded-lg p-4'>
-                        <div name='contact' className='  flex justify-center items-center p-4'>
-                            <form method='POST' action="https://getform.io/f/5a5684bd-7fac-46f2-937c-64325765e7ed" className='hover:scale-110 duration-500 rounded flex flex-col max-w-[600px] w-full'>
-                              
-                                <input className='rounded border border-white bg-black/20  p-2' type="text" placeholder='Name' name='name' />
-                                <input className='rounded my-4 bg-black/20 border border-white p-2' type="email" placeholder='Email' name='email' />
-                                <textarea className='rounded bg-black/20 border border-white p-2' name="message" rows="10" placeholder='Message'></textarea>
-                                <button className='hover:scale-110 duration-500 rounded text-white border-2  px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
+                    <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
+                        <div className='p-4'>
+                            <form
+                                action="https://getform.io/f/5a5684bd-7fac-46f2-937c-64325765e7ed"
+                                method='POST'
+                                encType='multipart/form-data'
+                            >
+                                <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+                                    <div className='flex flex-col'>
+                                        <label className='uppercase text-sm py-2'>Name</label>
+                                        <input
+                                            className='border bg-black/30 rounded-lg p-3 flex border-gray-300'
+                                            type='text'
+                                            name='name'
+                                        />
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <label className='uppercase text-sm py-2'>
+                                            Phone Number
+                                        </label>
+                                        <input
+                                            className='border bg-black/30 rounded-lg p-3 flex border-gray-300'
+                                            type='text'
+                                            name='phone'
+                                        />
+                                    </div>
+                                </div>
+                                <div className='flex flex-col py-2'>
+                                    <label className='uppercase text-sm py-2'>Email</label>
+                                    <input
+                                        className='border bg-black/30 rounded-lg p-3 flex border-gray-300'
+                                        type='email'
+                                        name='email'
+                                    />
+                                </div>
+                                <div className='flex flex-col py-2'>
+                                    <label className='uppercase text-sm py-2'>Subject</label>
+                                    <input
+                                        className='border bg-black/30 rounded-lg p-3 flex border-gray-300'
+                                        type='text'
+                                        name='subject'
+                                    />
+                                </div>
+                                <div className='flex flex-col py-2'>
+                                    <label className='uppercase text-sm py-2'>Message</label>
+                                    <textarea
+                                        className='border bg-black/30 rounded-lg p-3 border-gray-300'
+                                        rows='10'
+                                        name='message'
+                                    ></textarea>
+                                </div>
+                                <button className='border border-white w-full p-4 mt-4'>
+                                    Send Message
+                                </button>
                             </form>
                         </div>
                     </div>
                     {/* bottom */}
                 </div>
-                <div className=' items-center justify-between py-4'>
-                    <p className='uppercase tracking-widest text-center pt-8 '>Let's connect</p>
-                    <div className='rounded-lg gap-3 items-center justify-center flex p-6 text-2xl cursor-pointer hover:scale-105 ease-in duration-300'>
-
-                        <div className='rounded-lg border-white border  shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaLinkedinIn />
-                        </div>
-                        <div className='rounded-lg border-white border   shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaGithub />
-                        </div>
-                        <div className='rounded-lg border-white border  shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <AiOutlineMail />
-                        </div>
-                        <div className='rounded-lg border-white border   shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <BsPersonLinesFill />
-                        </div>
-
-                    </div>
-                </div>
+       
             </div>
         </div>
     )
 }
 
 export default Contact
+

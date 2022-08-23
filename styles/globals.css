@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
+
   body {
     
     @apply bg-gradient-to-r from-[#3b86d6] to-[#3ed6b5] text-[#ededed] tracking-wide

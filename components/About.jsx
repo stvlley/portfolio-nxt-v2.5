@@ -3,7 +3,7 @@ import Skills from './Skills'
 
 const About = () => {
     return (
-        <div className='w-full h-screen py-40 bg-black/30 justify-center items-center text-center'>
+        <div id='about' className='w-full h-screen py-40  justify-center items-center text-center'>
             <div name='about' className='text-white  w-full h-[400px] '>
                 <div className='flex flex-col justify-center  sm:items-center w-full h-full'>
                     <div className=' p-1 rounded-lg px-3 mx-6 hover:scale-110 duration-500 '>

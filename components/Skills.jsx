@@ -4,7 +4,7 @@ import {DiCss3 } from 'react-icons/di'
 import Image from 'next/image'
 export default function Skills() {
 
-    const [size, setSize] = useState(70)
+    const [size, setSize] = useState(55)
 
     useEffect(() => {
       const handleResize = () => {
@@ -28,7 +28,7 @@ export default function Skills() {
   return (
         <>
 
-        <div name='skills' className=' py-6 w-full h-[500px] text-white'>
+        <div id='skills' name='skills' className=' py-6 w-full h-[500px] text-white '>
 
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col  justify-center w-full h-full'>
