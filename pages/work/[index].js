@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { HashLoader } from 'react-spinners'
-import Navbar from '../../components/Navbar'
+import {AiFillHome} from 'react-icons/ai'
+import Head from 'next/head'
+import {useRouter} from 'next/router'
 function ProjectDetails() {
-
+    const router = useRouter()
     const [gif, setGif] = useState(null)
 
     const [loading, setLoading] = useState(true)
@@ -13,6 +15,9 @@ function ProjectDetails() {
             setLoading(false)
         }, 1000)
     }, [])
+
+
+
 
     return (
         <div>{
@@ -29,9 +34,18 @@ function ProjectDetails() {
 
                 :
                 <>
-                    <Navbar />
-                    <div id='project-details' className='w-full h-screen lg:h-screen sm:px-20 pt-8 '>
-                    <div className=' px-3 max-w-[1240px] uppercase  m-auto  py-32 w-full'>
+                <Head>
+                    <title>Project Details</title>
+                </Head>
+                <div className='bg-black/30 flex justify-between items-center px-4'>
+                    <img src='/logo.svg' alt='' style={{height: '100px', width: '100px'}}/>
+                    <div onClick={() => router.push('/')} className='cursor-pointer text-white p-3 px-10 text-5xl'>
+                        <AiFillHome />
+                    </div>
+                </div>
+                
+                    <div id='px-6 project-details' className='w-full h-screen lg:h-screen sm:px-20 '>
+                    <div className=' px-3 max-w-[1240px] uppercase  m-auto  py-8 w-full'>
 
                         <p className='text-2xl md:text-4xl tracking-widest'>
                             project name
@@ -41,7 +55,7 @@ function ProjectDetails() {
                         </h2>
                         <div className='grid lg:grid-cols-5 gap-8'>
                             {/* left */}
-                            <div className='hidden sm:flex col-span-3 bg-black/30 border border-white lg:col-span-2 w-full shadow-xl rounded-lg p-4'>
+                            <div className='flex col-span-3 bg-black/30 border border-white lg:col-span-2 w-full shadow-xl rounded-lg p-4'>
                                 <div className='lg:p-4 w-full'>
                                     <div className='rounded-lg hover:scale-105 ease-in duration-300'>
                                         text describing application/
@@ -75,7 +89,7 @@ function ProjectDetails() {
                         </div>
                         <div className='grid lg:grid-cols-5 mt-6 gap-8'>
                             {/* left */}
-                            <div className='hidden sm:flex col-span-3 bg-black/30 border border-white lg:col-span-2 w-full shadow-xl rounded-lg p-4'>
+                            <div className='flex col-span-3 bg-black/30 border border-white lg:col-span-2 w-full shadow-xl rounded-lg p-4'>
                                 <div className='lg:p-4f-full'>
                                     <div className='rounded-lg hover:scale-105 ease-in duration-300'>
                                         tech stack svg's
