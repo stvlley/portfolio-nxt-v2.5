@@ -4,10 +4,13 @@ import { BsPersonLinesFill } from 'react-icons/bs'
 import React from 'react'
 import { Link } from 'react-scroll'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
-
+import { useRouter } from 'next/router'
 
 
 const Footer = () => {
+    const router = useRouter()
+
+
     return (
         <div className=''>
             <div className='   items-center   justify-between p-4'>
@@ -28,7 +31,7 @@ const Footer = () => {
                             <BsPersonLinesFill />
                         </a>
                     </div>
-                    <div className=' p-3 hidden sm:flex text-black/0 uppercase tracking-widest  hover:border border-white rounded-lg text-sm hover:bg-black/30 hover:text-white hover:flex'>
+                    <div onClick={() => router.push('/admin')} className=' cursor-pointer p-3 hidden sm:flex text-black/0 uppercase tracking-widest  hover:border border-white rounded-lg text-sm hover:bg-black/30 hover:text-white hover:flex'>
                         admin
                     </div>
                     <div>
