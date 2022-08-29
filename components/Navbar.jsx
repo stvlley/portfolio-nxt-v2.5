@@ -102,7 +102,7 @@ const Navbar = () => {
                             </Link>
                         </ul>
                         <div className='pt-40'>
-                            <p className='tracking-widest uppercase text-[#56f1d8]'>Let's connect</p>
+                            <p className='tracking-widest uppercase text-[#56f1d8]'>Let&#39;s connect</p>
                             <div className='flex text-xl sm:text-3xl items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full  shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaLinkedinIn />

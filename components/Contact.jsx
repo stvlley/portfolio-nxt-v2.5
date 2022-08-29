@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Contact = () => {
@@ -16,7 +17,7 @@ const Contact = () => {
                     <div className='hidden sm:flex col-span-3 bg-black/30 border border-white lg:col-span-2 w-full shadow-xl rounded-lg p-4'>
                         <div className='lg:p-4f-full'>
                             <div className='rounded-lg hover:scale-105 ease-in duration-300'>
-                                <img src="/logo.svg" alt="" />
+                                <Image height={450} width={450} src="/logo.svg" alt="" />
                             </div>
                             <div>
                                 <h2 className='font-light  tracking-widest py-4'>
@@ -25,7 +26,7 @@ const Contact = () => {
                                 <p className='font-bold tracking-widest px-4'>Fullstack Web Developer</p>
                             </div>
                             <div className='tracking-widest text-gray-300 p-3 pt-5 '>
-                                <h2>"building the future one line of code at a time."</h2>
+                                <h2>&quot;building the future one line of code at a time.&quot;</h2>
                             </div>
 
                         </div>

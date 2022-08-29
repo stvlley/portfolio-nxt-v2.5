@@ -11,7 +11,7 @@ const Main = () => {
                 <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                     <div className='sm:flex'>
                         <div >
-                            <h1 className='py-4  sm:text-right text-gray-300'><div className='invisible sm:visible'>Hi, I'm </div><span className='text-5xl sm:text-7xl uppercase tracking-widest text-[#b0f4ef]'>Stephen Talley</span></h1>
+                            <h1 className='py-4  sm:text-right text-gray-300'><div className='invisible sm:visible'>Hi, I&#39;m </div><span className='text-5xl sm:text-7xl uppercase tracking-widest text-[#b0f4ef]'>Stephen Talley</span></h1>
                         </div>
                         <div className='items-center justify-center text-center'>
                             <h1 className='uppercase tracking-widest font-light mb-5 text-lg sm:text-6xl mx-3 px-3 m-auto text-gray-300 text-left'>

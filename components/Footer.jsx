@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <div className=''>
             <div className='   items-center   justify-between p-4'>
-                <p className='uppercase tracking-widest text-center pt-10 mt-10'>Let's connect</p>
+                <p className='uppercase tracking-widest text-center pt-10 mt-10'>Let&#39;s connect</p>
                 <div className=' rounded-lg pt-3 gap-3 items-center justify-center flex text-2xl cursor-pointer hover:scale-105 ease-in duration-300'>
 
                     <div className='rounded-lg bg-black/30 border-white border  shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
