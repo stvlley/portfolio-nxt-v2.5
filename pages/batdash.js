@@ -4,7 +4,7 @@ import { AiFillHome } from 'react-icons/ai'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-function FineLine() {
+function BatDash() {
     const router = useRouter()
     const [gif, setGif] = useState(null)
     const [size, setSize] = useState(50)
@@ -39,7 +39,7 @@ function FineLine() {
                         <title>Project Details</title>
                     </Head>
                     <div className='bg-black/30 flex justify-between items-center px-4'>
-                        <Image src='/logo.svg' alt='logo' width={70} height={70} />
+                        <Image src='/logo.svg' alt='' width={70} height={70}  />
                         <div onClick={() => router.push('/')} className='cursor-pointer text-white p-3 px-10 text-5xl'>
                             <AiFillHome />
                         </div>
@@ -70,27 +70,27 @@ function FineLine() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4 item-center text-center m-auto'>
-                                        <Image className='rounded-lg fill'  width='1000' height='500'  src="/fineline-1.png" alt="" />
+                                        <Image width={1000} height={500}  src="/fineline-1.png" alt="fine line landing page" />
                                     </div>
                                 </div>
 
                             </div>
-                            <div className=''>
+                            <div >
                                 {/* left */}
-                                <div className=''>
-                                    <div className=''>
+                                <div >
+                                    <div >
                                         <div className='uppercase'>
                                             <div className='w-full mb-5 text-xs md:text-sm text-white tracking-widest grid  sm:grid-cols-4 gap-4 text-center py-4'>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/nextjs-light.svg' alt='' width={size} height={size} />
+                                                    <Image priority src='/NextJS-Light.svg' alt='' width={size} height={size} />
                                                     <p className='my-4'>next.js</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/tailwindcss-light.svg' alt='' width={size} height={size} />
+                                                    <Image priority src='/TailwindCSS-Light.svg' alt='' width={size} height={size} />
                                                     <p className='my-4'>TailwindCSS</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/graphql-light.svg' alt='' width={size} height={size} />
+                                                    <Image priority src='/GraphQL-Light.svg' alt='' width={size} height={size} />
                                                     <p className='my-4'>graphql</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
@@ -106,7 +106,7 @@ function FineLine() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4'>
-                                        <Image className='rounded-lg' src="/prjctmgmt.gif" alt="" width={1400} height={700}  />
+                                        <Image width={1400} height={700}  className='rounded-lg' src="/fineline.gif" alt="" />
 
                                     </div>
                                 </div>
@@ -121,4 +121,4 @@ function FineLine() {
     )
 }
 
-export default FineLine
+export default BatDash

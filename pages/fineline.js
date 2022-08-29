@@ -82,15 +82,15 @@ function FineLine() {
                                         <div className='uppercase'>
                                             <div className='w-full mb-5 text-xs md:text-sm text-white tracking-widest grid  sm:grid-cols-4 gap-4 text-center py-4'>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/nextjs-light.svg' alt='' width={size} height={size} />
+                                                    <Image priority src='/NextJS-Light.svg' alt='' width={size} height={size} />
                                                     <p className='my-4'>next.js</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/tailwindcss-light.svg' alt='' width={size} height={size} />
+                                                    <Image priority src='/TailwindCSS-Light.svg' alt='' width={size} height={size} />
                                                     <p className='my-4'>TailwindCSS</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/graphql-light.svg' alt='' width={size} height={size} />
+                                                    <Image priority src='/GraphQL-Light.svg' alt='' width={size} height={size} />
                                                     <p className='my-4'>graphql</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
