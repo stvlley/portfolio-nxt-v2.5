@@ -2,10 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import ProjectItem from './ProjectItem'
-import p1 from '/Users/stvlley/portfolio-nxt-v2-1/public/fineline-1.png'
-import p2 from '/Users/stvlley/portfolio-nxt-v2-1/public/batdash-1.png'
-import p3 from '/Users/stvlley/portfolio-nxt-v2-1/public/prjctmgmt-1.png'
-import p4 from '/Users/stvlley/portfolio-nxt-v2-1/public/project1.png'
+import p1 from '../public/fineline-1.png'
+import p2 from '../public/batdash-1.png'
+import p3 from '../public/prjctmgmt-1.png'
+import p4 from '../public/project1.png'
 
 const Work = () => {
   return (
