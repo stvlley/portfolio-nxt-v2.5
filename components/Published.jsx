@@ -28,7 +28,7 @@ const Published = () => {
     
 
     return (
-        <div className='w-full h-screen px-10 md:pt-16 md:h-[800px] mt-16 md:mt-36 p-10 sm:px-32  py-40  uppercase text-light items-center text-center'>
+        <div className='w-full h-screen px-10 md:pt-16 md:h-[800px] mt-16 md:mt-36 xl:mt-60 p-10 sm:px-32  py-40  uppercase text-light items-center text-center'>
         <p className=' p-3 tracking-widest py-6 text-xl md:text-4xl'>some recent blogs</p>
         <div className=' h-[800px] md:h-[400px] justify-center items-center '>
 
