@@ -39,35 +39,35 @@ export default function Skills() {
 
           <div className='w-full mb-5 text-xs md:text-sm text-white tracking-widest grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-4'>
               <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                  <Image priority src='/html.svg' alt='' width={size} height={size} />
+                  <Image  src='/html.svg' alt='' width={size} height={size} />
                   <p className='my-4'>HTML</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md bg-black/30 border border-white hover:scale-110 duration-500'>
-              <Image priority src='/css.svg' alt='' width={size} height={size} />
+              <Image  src='/css.svg' alt='' width={size} height={size} />
                   <p className='my-4'>CSS</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md border border-white  bg-black/30 hover:scale-110 duration-500'>
-              <Image priority src='/javascript.svg' alt='' width={size} height={size} />
+              <Image  src='/javascript.svg' alt='' width={size} height={size} />
                   <p className='my-4'>JAVASCRIPT</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
-              <Image priority src='/rails.svg' alt='' width={size} height={size} />
+              <Image  src='/rails.svg' alt='' width={size} height={size} />
                   <p className='my-4'>REACT</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
-              <Image priority src='/react-light.svg' alt='' width={size} height={size} />
+              <Image src='/react-light.svg' alt='' width={size} height={size} />
                   <p className='my-4'>RAILS</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
-              <Image priority src='/nextjs-light.svg' alt='' width={size} height={size} />
+              <Image  src='/nextjs-light.svg' alt='' width={size} height={size} />
                   <p className='my-4'>NEXTJS</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
-              <Image priority src='/tailwindcss-light.svg' alt='' width={size} height={size} />
+              <Image  src='/tailwindcss-light.svg' alt='' width={size} height={size} />
                   <p className='my-4'>TAILWINDCSS</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md bg-black/30 border border-white  hover:scale-110 duration-500'>
-              <Image priority src='/python-light.svg' alt='' width={size} height={size} />
+              <Image  src='/python-light.svg' alt='' width={size} height={size} />
                   <p className='my-4'>PYTHON</p>
               </div>
               
