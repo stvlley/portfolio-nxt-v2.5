@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import {HashLoader} from 'react-spinners'
 import Footer from '../components/Footer'
 import WorkPage from './work'
+import Published from '../components/Published'
 
 function Home() {
 
@@ -44,6 +45,7 @@ function Home() {
           <Main />
           <About />
           <WorkPage />
+          <Published />
           <Contact />
           <Footer />
      
