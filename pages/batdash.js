@@ -39,7 +39,7 @@ function FineLine() {
                         <title>Project Details</title>
                     </Head>
                     <div className='bg-black/30 flex justify-between items-center px-4'>
-                        <img src='/logo.svg' alt='' style={{ height: '100px', width: '100px' }} />
+                        <Image src='/logo.svg' alt='logo' width={70} height={70} />
                         <div onClick={() => router.push('/')} className='cursor-pointer text-white p-3 px-10 text-5xl'>
                             <AiFillHome />
                         </div>
@@ -70,7 +70,7 @@ function FineLine() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4 item-center text-center m-auto'>
-                                        <img style={{ height: '330px', width: '700px' }} src="/fineline-1.png" alt="" />
+                                        <Image className='rounded-lg fill'  width='1000' height='500'  src="/fineline-1.png" alt="" />
                                     </div>
                                 </div>
 
@@ -106,7 +106,7 @@ function FineLine() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4'>
-                                        <img className='rounded-lg' src="/prjctmgmt.gif" alt="" />
+                                        <Image className='rounded-lg' src="/prjctmgmt.gif" alt="" width={1400} height={700}  />
 
                                     </div>
                                 </div>

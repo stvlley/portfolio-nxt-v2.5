@@ -26,7 +26,7 @@ function Admin() {
                     />
                 </ div> :
                 <>
-                    <h1 className='tracking-widest uppercase fint-light'>Welcome, Daddy</h1>
+                    <h1 className='tracking-widest uppercase fint-light'>Welcome, Please Log In...</h1>
                 </>
 
             }

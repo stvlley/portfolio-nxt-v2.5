@@ -40,7 +40,7 @@ function PrjctMgmt() {
                         <link rel="icon" href="/logo.svg" />
                     </Head>
                     <div className='bg-black/30 flex justify-between items-center px-4'>
-                        <img src='/logo.svg' alt='' style={{ height: '100px', width: '100px' }} />
+                        <Image src='/logo.svg' alt='' width={70} height={70}  />
                         <div onClick={() => router.push('/')} className='cursor-pointer text-white p-3 px-10 text-5xl'>
                             <AiFillHome />
                         </div>
@@ -60,7 +60,7 @@ function PrjctMgmt() {
                                 <div className='flex col-span-3 bg-black/30 border border-white lg:col-span-2 w-full shadow-xl rounded-lg p-4'>
                                     <div className='lg:p-4 w-full'>
                                         <div className='rounded-lg hover:scale-105 ease-in duration-300'>
-                                            <p className='tracking-widest font-light  md:text-3xl'>
+                                            <p className='tracking-widest font-light  md:text-4xl'>
                                                 Prjct MGMT is a highly functional and simplified version of an enterprise level project management application. Created with CRA, TailwindCSS, GraphQL, and MongoDB.
                                             </p>
                                         </div>
@@ -71,16 +71,16 @@ function PrjctMgmt() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4 item-center text-center m-auto'>
-                                        <img style={{ height: '330px', width: '700px' }} src="/alert.svg" alt="" />
-                                        landing page under construction
+                                        <Image width={350} height={350}  src="/alert.svg" alt="alert" />
+                                        <p>landing page under construction</p>
                                     </div>
                                 </div>
 
                             </div>
-                            <div className=''>
+                            <div>
                                 {/* left */}
-                                <div className=''>
-                                    <div className=''>
+                                <div >
+                                    <div >
                                         <div className='uppercase'>
                                             <div className='w-full mb-5 text-xs md:text-sm text-white tracking-widest grid  sm:grid-cols-4 gap-4 text-center py-4'>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
@@ -108,7 +108,7 @@ function PrjctMgmt() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4'>
-                                        <img className='rounded-lg' src="/prjctmgmt.gif" alt="" />
+                                        <Image width={1400} height={700}  className='rounded-lg' src="/prjctmgmt.gif" alt="" />
 
                                     </div>
                                 </div>
