@@ -59,7 +59,7 @@ export default function Skills() {
                   <p className='my-4'>RAILS</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
-              <Image  src='/Nextjs-Light.svg' alt='' width={size} height={size} />
+              <Image  src='/NextJS-Light.svg' alt='' width={size} height={size} />
                   <p className='my-4'>NEXTJS</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
