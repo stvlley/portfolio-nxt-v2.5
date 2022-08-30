@@ -52,11 +52,11 @@ export default function Skills() {
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
               <Image  src='/Rails.svg' alt='' width={size} height={size} />
-                  <p className='my-4'>REACT</p>
+                  <p className='my-4'>RAILS</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
               <Image src='/React-Light.svg' alt='' width={size} height={size} />
-                  <p className='my-4'>RAILS</p>
+                  <p className='my-4'>REACT</p>
               </div>
               <div className='rounded-lg pt-3 shadow-md  bg-black/30 border border-white hover:scale-110 duration-500'>
               <Image  src='/NextJS-Light.svg' alt='' width={size} height={size} />
