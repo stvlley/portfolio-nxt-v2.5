@@ -71,7 +71,7 @@ function BatDash() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4 item-center text-center m-auto'>
-                                        <Image className='rounded-lg' width={1000} height={500}  src="/batdash-1.png" alt="fine line landing page" />
+                                        <Image priority className='rounded-lg' width={1000} height={500}  src="/batdash-1.png" alt="fine line landing page" />
                                     </div>
                                 </div>
 
@@ -107,7 +107,7 @@ function BatDash() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4'>
-                                        <Image width={1400} height={700}  className='rounded-lg' src="/batdash.gif" alt="" />
+                                        <Image priority width={1400} height={700}  className='rounded-lg' src="/batdash.gif" alt="" />
 
                                     </div>
                                 </div>
