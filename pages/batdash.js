@@ -36,7 +36,8 @@ function BatDash() {
                 :
                 <>
                     <Head>
-                        <title>Project Details</title>
+                        <title>Bat Dash</title>
+                        <link rel="icon" href="/logo.svg" />
                     </Head>
                     <div className='bg-black/30 flex justify-between items-center px-4'>
                         <Image src='/logo.svg' alt='' width={70} height={70}  />
@@ -49,10 +50,10 @@ function BatDash() {
                         <div className=' px-3 max-w-[1240px]  m-auto  py-8 w-full'>
 
                             <p className='uppercase text-2xl md:text-4xl tracking-widest'>
-                                Fine Line
+                                Bat Dash
                             </p>
                             <h2 className='uppercase py-4 font-light text-2xl text-gray-300 tracking-widest invisible sm:visible'>
-                                Next.js Blog App
+                                Ecommerce Dashboard
                             </h2>
                             <div className='grid lg:grid-cols-5 gap-8'>
                                 {/* left */}
@@ -60,7 +61,7 @@ function BatDash() {
                                     <div className='lg:p-4 w-full'>
                                         <div className='rounded-lg hover:scale-105 ease-in duration-300'>
                                             <p className='tracking-widest font-light  md:text-2xl'>
-                                                Fine Line is a fullstack Next.js application using TailwindCSS and GraphQL. I also implemented a headless CMS to publish articles through GraphCMS and allow for not auth users to commment with moderation through a publish feature alotted through GraphCMS.
+                                                Bat Dash is a data aggregation tool to visualize complex data sets using Syncfusion. This project will be coupled with a backend using Node.js and the Austin, Texas crime report data API in the next sprint. Stay tuned.
                                             </p>
                                         </div>
 
@@ -70,7 +71,7 @@ function BatDash() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4 item-center text-center m-auto'>
-                                        <Image width={1000} height={500}  src="/fineline-1.png" alt="fine line landing page" />
+                                        <Image className='rounded-lg' width={1000} height={500}  src="/batdash-1.png" alt="fine line landing page" />
                                     </div>
                                 </div>
 
@@ -82,20 +83,20 @@ function BatDash() {
                                         <div className='uppercase'>
                                             <div className='w-full mb-5 text-xs md:text-sm text-white tracking-widest grid  sm:grid-cols-4 gap-4 text-center py-4'>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/NextJS-Light.svg' alt='' width={size} height={size} />
-                                                    <p className='my-4'>next.js</p>
+                                                    <Image priority src='/React-Light.svg' alt='' width={size} height={size} />
+                                                    <p className='my-4'>React</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
                                                     <Image priority src='/TailwindCSS-Light.svg' alt='' width={size} height={size} />
                                                     <p className='my-4'>TailwindCSS</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/GraphQL-Light.svg' alt='' width={size} height={size} />
-                                                    <p className='my-4'>graphql</p>
+                                                    <Image className='bg-white rounded-lg' priority src='/pie-chart-2.svg' alt='' width={size} height={size} />
+                                                    <p className='my-4'>syncfusion</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/graphcms-mark.svg' alt='' width={size} height={size} />
-                                                    <p className='my-4'>graph cms</p>
+                                                    <Image  priority src='/JavaScript.svg' alt='' width={size} height={size} />
+                                                    <p className='my-4'>javascript</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -106,7 +107,7 @@ function BatDash() {
                                 {/* right */}
                                 <div className='col-span-3 w-full h-auto shadow-lg rounded-lg pb-10 bg-black/30 border border-white uppercase  tracking-widest font-extralight lg:p-4'>
                                     <div className='p-4'>
-                                        <Image width={1400} height={700}  className='rounded-lg' src="/fineline.gif" alt="" />
+                                        <Image width={1400} height={700}  className='rounded-lg' src="/batdash.gif" alt="" />
 
                                     </div>
                                 </div>

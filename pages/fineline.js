@@ -36,7 +36,8 @@ function FineLine() {
                 :
                 <>
                     <Head>
-                        <title>Project Details</title>
+                        <title>Fine Line</title>
+                        <link rel="icon" href="/logo.svg" />
                     </Head>
                     <div className='bg-black/30 flex justify-between items-center px-4'>
                         <Image src='/logo.svg' alt='' width={70} height={70}  />
@@ -94,7 +95,7 @@ function FineLine() {
                                                     <p className='my-4'>graphql</p>
                                                 </div>
                                                 <div className=' rounded-lg pt-3 bg-black/30 border border-white hover:scale-110 duration-500'>
-                                                    <Image priority src='/graphcms-mark.svg' alt='' width={size} height={size} />
+                                                    <Image className='bg-white rounded-lg' priority src='/graphcms-mark.svg' alt='' width={size} height={size} />
                                                     <p className='my-4'>graph cms</p>
                                                 </div>
                                             </div>

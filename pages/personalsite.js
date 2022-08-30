@@ -36,7 +36,7 @@ function PrjctMgmt() {
                 :
                 <>
                     <Head>
-                        <title>Project Details</title>
+                        <title>Personal Site</title>
                         <link rel="icon" href="/logo.svg" />
                     </Head>
                     <div className='bg-black/30 flex justify-between items-center px-4'>
