@@ -18,16 +18,20 @@ const Footer = () => {
                 <div className=' rounded-lg pt-3 gap-3 items-center justify-center flex text-2xl cursor-pointer hover:scale-105 ease-in duration-300'>
 
                     <div className='rounded-lg bg-black/30 border-white border  shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                        <FaLinkedinIn />
+                    <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/stephen-talley-the-developer">
+                            <FaLinkedinIn />
+                        </a>
                     </div>
                     <div className='rounded-lg bg-black/30 border-white border   shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                        <FaGithub />
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/stvlley">
+                            <FaGithub />
+                        </a>
                     </div>
                     <div className='rounded-lg bg-black/30 border-white border  shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <AiOutlineMail />
                     </div>
                     <div className='rounded-lg bg-black/30 border-white border   shadow-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1dqgJ1e0UvCjaWArJFzxDVN38qDSvMZwx/view?usp=sharing">
+                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1CRtnChxOacJ5YEFpgXheNUa-UK6vD6yA/view?usp=sharing">
                             <BsPersonLinesFill />
                         </a>
                     </div>
