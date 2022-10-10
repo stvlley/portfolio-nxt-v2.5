@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { HashLoader } from 'react-spinners'
-import Login from '/Users/stvlley/portfolio-nxt-v2.5/components/Login.jsx'
+import Login from '../components/Login.jsx'
 
 
 function Admin() {
