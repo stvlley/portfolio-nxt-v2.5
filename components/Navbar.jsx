@@ -71,7 +71,7 @@ const Navbar = () => {
             </div>
             {/* sliding navbar from left to right */}
             <div className={nav ? "fixed z-[50] md:hidden left-0 top-0 w-full h-screen bg-black/70" : ''}>
-                <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[0%] md:w-[45%] h-screen bg-gradient-to-r from-[#000000] to-black/30 p-10 ease-in-out duration-500 ' : 'fixed left-[-150%]  top-0 p-10 ease-in duration-500 '}>
+                <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[0%] md:w-[45%] h-screen bg-gradient-to-r from-[#000000] to-black/30 p-10 ease-in-out duration-500 ' : 'fixed left-[-175%]  top-0 p-10 ease-in duration-500 '}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
                             <Image alt='' src='/logo.svg' width='75' height='75' />

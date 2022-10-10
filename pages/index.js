@@ -26,7 +26,7 @@ function Home() {
   return (
     <div className='bg-black/20'>
       {loading ?
-        <div className='bg-gradient-to-r w-full h-screen from-[#4f7092] to-[#6ddbc0]'>
+        <div className='w-full h-screen bg-gradient-to-r from-[#3b86d6] to-[#3ed6b5] '>
           <HashLoader
           style={{}}
             color="#03fcdb"

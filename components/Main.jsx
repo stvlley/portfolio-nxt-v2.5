@@ -14,10 +14,10 @@ const Main = () => {
                             <h1 className='py-4  sm:text-right text-gray-300'><div className='invisible sm:visible'>Hi, I&#39;m </div><span className='text-5xl sm:text-7xl uppercase tracking-widest text-[#b0f4ef]'>Stephen Talley</span></h1>
                         </div>
                         <div className='items-center justify-center text-center'>
-                            <h1 className='uppercase tracking-widest font-light mb-5 text-lg sm:text-6xl mx-3 px-3 m-auto text-gray-300 text-left'>
-                                A Fullstack Web Developer
+                            <h1 className='uppercase tracking-widest font-light mb-5 text-sm m-auto sm:text-lg sm:text-6xl px-3 text-center text-gray-300 text-left'>
+                                <span className='hidden sm:flex'>A</span> Fullstack Web Developer
                             </h1>
-                           <div className='px-16'>
+                           <div className='px-20'>
                            <Link to='work' >
                                 <button
                                     className='flex justify-center group items-center rounded-lg text-white border px-6 py-3 '>
