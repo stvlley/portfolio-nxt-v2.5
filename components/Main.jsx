@@ -15,7 +15,7 @@ const Main = () => {
                         </div>
                         <div className='items-center justify-center text-center'>
                             <h1 className='uppercase tracking-widest font-light mb-5 text-sm m-auto sm:text-lg sm:text-6xl px-3 text-center text-gray-300 text-left'>
-                                <span className='hidden sm:flex'>A</span> Fullstack Web Developer
+                                   A Fullstack Web Developer
                             </h1>
                            <div className='px-20'>
                            <Link to='work' >
