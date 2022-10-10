@@ -1,6 +1,6 @@
 import React from 'react'
-
-export default function () {
+import Link from 'next/link'
+export default function Login() {
   return (
     <div className=''>
       <div className='w-full h-screen text-center '>
@@ -22,7 +22,7 @@ export default function () {
              </div>
              <div className="flex items-center justify-between">
                  <div className="cursor-pointer p-3 hover:bg-black/30 rounded-lg hover:outline uppercase tracking-widest flex flex-row items-center">
-                 <a href='/' >back</a>
+                 <Link href='/' >back</Link>
                  </div>
                  <div>
                      <a className="text-sm cursor-pointer hover:text-blue-300 transition duration-200 text-[#3ed6b5] hover:underline uppercase tracking-widest" href="#">Forgot password</a>
