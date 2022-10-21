@@ -29,21 +29,21 @@ const Work = () => {
           appType={'Ecommerce Dashboard'}
           liveLink={'https://batman-dashboard.vercel.app/'} />
 
+<ProjectItem
+  img={p4}
+  detailsRef={'personalsite'}
+  name='Personal Site'
+  appType={'Personal Portfolio'}
+  liveLink={'https://with-tailwindcss-swart-alpha.vercel.app/'} />
 
         <ProjectItem
           img={p3}
           detailsRef={'prjctmgmt'}
           name='Prjct Mgmt'
           appType={'Project Management App'}
-          liveLink={'https://next-blog-five-navy-21.vercel.app/'} />
+          liveLink={'/'} />
 
 
-        <ProjectItem
-          img={p4}
-          detailsRef={'personalsite'}
-          name='Personal Site'
-          appType={'Personal Portfolio'}
-          liveLink={'https://next-blog-five-navy-21.vercel.app/'} />
 
 
       </div>
