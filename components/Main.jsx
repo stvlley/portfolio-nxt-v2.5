@@ -18,10 +18,10 @@ const Main = () => {
                                    A Fullstack Web Developer
                             </h1>
                            <div className='px-20'>
-                           <Link to='work' >
+                           <Link to='work' href='work' >
                                 <button
                                     className='flex justify-center group items-center rounded-lg text-white border px-6 py-3 '>
-                                    <a href=''>view my work</a>
+                                    <h3 >view my work</h3>
                                     <span className='group-hover:rotate-90 duration-300'>
                                         <BiRightArrow />
                                     </span>

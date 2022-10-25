@@ -50,18 +50,18 @@ const Navbar = () => {
                     <Image alt='' src={logoToggle} width='100' height='60' />
                     <ul style={{ color: `${textColor}` }}  className='hidden  tracking-widest md:flex'>
                     
-                        <Link  spy={true}  offset={50} duration={500} to='main'>
-                            <a href='' className="hover:scale-125 ease-in duration-300 ml-10  cursor-pointer text-sm uppercase hover:border-b">Home</a>
+                        <Link to='main' spy={true}  offset={50} duration={500} href='main'>
+                            <p className="hover:scale-125 ease-in duration-300 ml-10  cursor-pointer text-sm uppercase hover:border-b">Home</p>
                         </Link>
                    
-                        <Link spy={true}  offset={50} duration={500} to='about'>
-                            <a href='' className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">About</a>
+                        <Link to="about" spy={true}  offset={50} duration={500} href='about'>
+                            <p className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">About</p>
                         </Link>
-                        <Link  spy={true}  offset={50} duration={500} to='work'>
-                            <a href='' className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Work</a>
+                        <Link to='work'  spy={true}  offset={50} duration={500} href='work'>
+                            <p className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Work</p>
                         </Link>
-                        <Link spy={true}  offset={50} duration={500} to='contact'>
-                            <a href='' className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Contact</a>
+                        <Link to="contact" spy={true}  offset={50} duration={500} href='contact'>
+                            <p  className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Contact</p>
                         </Link>
                     </ul>
                     <div onClick={handleNav} className={iconToggle}>
@@ -85,20 +85,20 @@ const Navbar = () => {
                     </div>
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase '>
-                            <Link spy={true} offset={50} duration={500} to='/about' onClick={() => setNav(!nav)}>
-                                <a href='' className='py-4 text-sm'>Home</a>
+                            <Link to='about' spy={true} offset={50} duration={500} href='/about' onClick={() => setNav(!nav)}>
+                                <p  className='py-4 text-sm'>Home</p>
                             </Link>
-                            <Link to='/'>
-                                <a href='' className='py-4 text-sm'>About</a>
+                            <Link href='/' to='about'>
+                                <p  className='py-4 text-sm'>About</p>
                             </Link>
-                            <Link to='/'>
-                                <a href='' className='py-4 text-sm'>Skills</a>
+                            <Link href='/' to='skills'>
+                                <p  className='py-4 text-sm'>Skills</p>
                             </Link>
-                            <Link to='/'>
-                                <a href='' className='py-4 text-sm'>Work</a>
+                            <Link href='/' to='work'>
+                                <p className='py-4 text-sm'>Work</p>
                             </Link>
-                            <Link to='/'>
-                                <a href='' className='py-4 text-sm'>Contact</a>
+                            <Link href='/' to='contact'>
+                                <p className='py-4 text-sm'>Contact</p>
                             </Link>
                         </ul>
                         <div className='pt-40'>
