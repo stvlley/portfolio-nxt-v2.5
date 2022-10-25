@@ -51,17 +51,17 @@ const Navbar = () => {
                     <ul style={{ color: `${textColor}` }}  className='hidden  tracking-widest md:flex'>
                     
                         <Link  spy={true}  offset={50} duration={500} to='main'>
-                            <li className="hover:scale-125 ease-in duration-300 ml-10  cursor-pointer text-sm uppercase hover:border-b">Home</li>
+                            <a href='' className="hover:scale-125 ease-in duration-300 ml-10  cursor-pointer text-sm uppercase hover:border-b">Home</a>
                         </Link>
                    
                         <Link spy={true}  offset={50} duration={500} to='about'>
-                            <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">About</li>
+                            <a href='' className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">About</a>
                         </Link>
                         <Link  spy={true}  offset={50} duration={500} to='work'>
-                            <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Work</li>
+                            <a href='' className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Work</a>
                         </Link>
                         <Link spy={true}  offset={50} duration={500} to='contact'>
-                            <li className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Contact</li>
+                            <a href='' className="hover:scale-125 ease-in duration-300 ml-10 cursor-pointer text-sm uppercase hover:border-b">Contact</a>
                         </Link>
                     </ul>
                     <div onClick={handleNav} className={iconToggle}>
@@ -86,19 +86,19 @@ const Navbar = () => {
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase '>
                             <Link spy={true} offset={50} duration={500} to='/about' onClick={() => setNav(!nav)}>
-                                <li className='py-4 text-sm'>Home</li>
+                                <a href='' className='py-4 text-sm'>Home</a>
                             </Link>
                             <Link to='/'>
-                                <li className='py-4 text-sm'>About</li>
+                                <a href='' className='py-4 text-sm'>About</a>
                             </Link>
                             <Link to='/'>
-                                <li className='py-4 text-sm'>Skills</li>
+                                <a href='' className='py-4 text-sm'>Skills</a>
                             </Link>
                             <Link to='/'>
-                                <li className='py-4 text-sm'>Work</li>
+                                <a href='' className='py-4 text-sm'>Work</a>
                             </Link>
                             <Link to='/'>
-                                <li className='py-4 text-sm'>Contact</li>
+                                <a href='' className='py-4 text-sm'>Contact</a>
                             </Link>
                         </ul>
                         <div className='pt-40'>
@@ -147,6 +147,7 @@ const Navbar = () => {
                     </li>
                     <li className='p-4 border-spacing-2 border-white border rounded-lg w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black/30'>
                         <a
+                        href=''
                             className='flex justify-between items-center w-full text-gray-300'
 
                         >

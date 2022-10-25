@@ -26,8 +26,9 @@ function Home() {
   return (
     <div className='bg-black/20'>
       <Head>
-            <title className=''>Stephen Talley | Software Engineer</title>
-            <meta name='content' content='Language agnostic Software Engineer always striving to sharpen my coding skills. Maintains a curious and critical mindset. Posseses a logical and intuitive perspective that elevates my ability to find unconventional solutions to complex business problems. I stay sharp and diligent and always keep the bigger picture in sight. I believe consistency is the key that unlocks all doors to opportunity.' />
+            <title >Stephen Talley | Software Engineer</title>
+            <meta name='description' content='Stephen Talley Software Engineer Portfolio'/>
+                <meta name='keywords' content='Web Dev, Software Developer, Engineer, Coder, Coding, Tech, Blockchain, Crypto, Technology, Web Development, Application Development, AI, Machine Learning, Artificial Intelligence, Programmer, Computer Science Guy, CompSci, Code Monkey, Hacker, Front End Developer, Backend Developer, The best software engineer in the world, Blogger, Content Creator, Youtuber, Creator, Creative' />
             <link rel="icon" href="/logo.svg" />
       </Head>
       {loading ?

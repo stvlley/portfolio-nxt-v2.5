@@ -21,7 +21,7 @@ const Main = () => {
                            <Link to='work' >
                                 <button
                                     className='flex justify-center group items-center rounded-lg text-white border px-6 py-3 '>
-                                    <p>view my work</p>
+                                    <a href=''>view my work</a>
                                     <span className='group-hover:rotate-90 duration-300'>
                                         <BiRightArrow />
                                     </span>
