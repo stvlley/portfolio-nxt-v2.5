@@ -161,7 +161,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://drive.google.com/file/d/1CRtnChxOacJ5YEFpgXheNUa-UK6vD6yA/view?usp=sharing'
+              href='https://docs.google.com/document/d/1SQ_xI4Fc_p-ciQ7rWE0lQ1h194Sb2Utz/edit?usp=sharing&ouid=102745043010295840129&rtpof=true&sd=true'
             >
               Resume <BsPersonLinesFill size={30} />
             </a>
